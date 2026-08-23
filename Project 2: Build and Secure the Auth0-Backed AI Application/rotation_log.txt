@@ -1,0 +1,16 @@
+[2026-08-20T23:22:36] === Credential rotation test start ===
+[2026-08-20T23:22:37] Obtained M2M token. expires_in=86400s
+[2026-08-20T23:22:37] Calling /chat with FRESH token...
+[2026-08-20T23:22:39] GET /chat -> 200 {
+  "caller_sub": "tuURqJ9o4KEVlJyWo9FhaXayWZyCgLKj@clients",
+  "message": "AI chat response OK"
+}
+
+[2026-08-20T23:22:39] Sleeping 65s to let the token expire...
+[2026-08-20T23:23:44] Replaying the SAME (now expired) token...
+[2026-08-20T23:23:46] GET /chat -> 200 {
+  "caller_sub": "tuURqJ9o4KEVlJyWo9FhaXayWZyCgLKj@clients",
+  "message": "AI chat response OK"
+}
+
+[2026-08-20T23:23:46] TEST FAILED: Expected 401 on replay, got 200
