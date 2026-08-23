@@ -1,0 +1,37 @@
+=================================================================
+Timestamp: 2026-08-22T14:44:42.242828
+Payload: document_payload_1.txt
+Status: BLOCKED
+Reason: matched pattern -> 'disregard (the )?(surrounding )?(document )?context'
+=================================================================
+Timestamp: 2026-08-22T14:44:42.272019
+Payload: document_payload_2.txt
+Status: BLOCKED
+Reason: matched pattern -> 'debug mode'
+=================================================================
+Timestamp: 2026-08-22T14:44:42.292545
+Payload: document_payload_3.txt
+Status: PASSED
+
+[SUMMARY] 2/3 payloads BLOCKED
+=================================================================
+
+=================================================================
+Timestamp: 2026-08-22T14:46:37.174811
+Payload: document_payload_1.txt
+Status: BLOCKED
+Reason: matched pattern -> 'disregard (the )?(surrounding )?(document )?context'
+=================================================================
+Timestamp: 2026-08-22T14:46:37.177621
+Payload: document_payload_2.txt
+Status: BLOCKED
+Reason: matched pattern -> 'debug mode'
+=================================================================
+Timestamp: 2026-08-22T14:46:37.182019
+Payload: document_payload_3.txt
+Status: BLOCKED
+Reason: matched pattern -> 'include the exact value of'
+
+[SUMMARY] 3/3 payloads BLOCKED
+=================================================================
+
