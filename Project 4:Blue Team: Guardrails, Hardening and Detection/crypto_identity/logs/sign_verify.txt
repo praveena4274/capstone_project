@@ -1,0 +1,30 @@
+=================================================================
+Timestamp: 2026-08-22T14:56:13.100057
+Scenario: Legitimate message (unmodified)
+Message: b'[ORCHESTRATOR] Approve refund for user_8842, amount=500.00'
+Result: SUCCESS - Signature valid, message accepted.
+=================================================================
+
+=================================================================
+Timestamp: 2026-08-22T14:56:13.105224
+Scenario: Tampered message (amount changed 500->900)
+Message: b'[ORCHESTRATOR] Approve refund for user_8842, amount=900.00'
+Result: FAILED - Invalid signature. Message REJECTED.
+Error: SecurityError - signature does not match message content. Possible tampering detected.
+=================================================================
+
+=================================================================
+Timestamp: 2026-08-22T14:56:18.650080
+Scenario: Legitimate message (unmodified)
+Message: b'[ORCHESTRATOR] Approve refund for user_8842, amount=500.00'
+Result: SUCCESS - Signature valid, message accepted.
+=================================================================
+
+=================================================================
+Timestamp: 2026-08-22T14:56:18.653753
+Scenario: Tampered message (amount changed 500->900)
+Message: b'[ORCHESTRATOR] Approve refund for user_8842, amount=900.00'
+Result: FAILED - Invalid signature. Message REJECTED.
+Error: SecurityError - signature does not match message content. Possible tampering detected.
+=================================================================
+
