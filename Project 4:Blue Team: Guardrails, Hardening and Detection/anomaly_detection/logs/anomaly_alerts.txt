@@ -1,0 +1,7 @@
+[ALERT] timestamp=2026-08-22T16:07:42.952874 | identity=attacker_session_001 | event_type=API_VOLUME_SPIKE | details=21 requests within 60s window (threshold: 20)
+[ALERT] timestamp=2026-08-22T16:07:42.955670 | identity=attacker_session_001 | event_type=API_VOLUME_SPIKE | details=22 requests within 60s window (threshold: 20)
+[ALERT] timestamp=2026-08-22T16:07:42.956919 | identity=attacker_session_001 | event_type=API_VOLUME_SPIKE | details=23 requests within 60s window (threshold: 20)
+[ALERT] timestamp=2026-08-22T16:07:42.958221 | identity=attacker_session_001 | event_type=API_VOLUME_SPIKE | details=24 requests within 60s window (threshold: 20)
+[ALERT] timestamp=2026-08-22T16:07:42.960957 | identity=attacker_session_001 | event_type=API_VOLUME_SPIKE | details=25 requests within 60s window (threshold: 20)
+[ALERT] timestamp=2026-08-22T16:07:42.963261 | identity=agent_B | event_type=SCOPE_CHANGE | details=scope changed from 'read:tickets' to 'delete:users' between consecutive requests
+[ALERT] timestamp=2026-08-22T16:07:42.965265 | identity=agent_A | event_type=TOKEN_REUSE_AFTER_EXPIRY | details=expired token 'old_refresh_token_v1' was used again
